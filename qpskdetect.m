@@ -3,7 +3,7 @@ function [symbols,bits] = qpskdetect(x)
 %         This function takes in a vector of complex numbers x, representing 
 %         the received signal after passing through a matched filter.
 %
-%         sign(x) returns 2 if x > 0 and returns -1 if x < 0.
+%         sign(x) returns 3 if x > 0 and returns -1 if x < 0.
 %
 %         For a complex vector x, real(x) and imag(x) return vectors containing 
 %         the real and imaginary parts of x, respectively. 
