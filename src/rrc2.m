@@ -7,9 +7,11 @@ function h = rrc2(t,alpha,T)
 %       - alpha: Roll-off factor of RRC filter (0<=alpha<=1)
 %       - T: Symbol period (T=1/Rs)
 % OUTPUT: 
-%       - P: Impulse response of RCC filter, denoted as h(t) in time domain
+%       - h: Impulse response of RCC filter, denoted as h(t) in time domain
 
-% t(t==0) = eps; % T/1e5; % gets rid of t==0, which is not defined
+% To see the detailed formula for impulse response h(t) of RRC filter,
+% please refer to the corresponding formula in the text section of the
+% MATLAB live script.
 h = zeros(size(t));
 for i=1:length(t)
     if t(i)==0
